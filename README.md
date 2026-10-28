@@ -28,30 +28,6 @@ A mobile-first scouting app for **FIRST® Tech Challenge** teams. Scouts record 
 
 Offline, you can open sessions and add or edit cards. FTCScout data is shown from the last download, so refresh it while you are online. Changes from different devices show up for everyone once those devices have been online.
 
-## Self-hosting
-
-No build step: plain files served from the `docs/` folder.
-
-1. **Firebase.** Create a project, enable Firestore, register a Web app, and paste its config into `docs/js/firebase.js`. The values are public identifiers, not secrets.
-2. **Firestore rules.** Publish:
-
-   ```
-   rules_version = '2';
-   service cloud.firestore {
-     match /databases/{db}/documents {
-       match /workspaces/{code} {
-         allow get: if true;
-         allow create: if true;
-         match /{document=**} { allow read, write: if true; }
-       }
-     }
-   }
-   ```
-
-3. **Hosting.** Push the repository to GitHub, then Settings → Pages → Deploy from a branch → `main` → `/docs`.
-4. **Fonts (optional).** The design uses the commercial font Tobi, which is not included. Put licensed files in `docs/fonts/` as `Tobi.woff2` and `Tobi-Light.woff2` (`.ttf` or `.otf` also work). Without them the browser falls back to a system font.
-5. **Texts.** All on-screen text lives in `docs/js` (mostly `constants.js` and `components/`). Replace `[your e-mail or Telegram]` in `components/Footer.js` with your contact.
-
 ## Access model and privacy
 
 Data lives under `workspaces/{code}`. The code is 12 random characters (60 bits), and the rules do not allow listing workspaces, so data cannot be found without the code. It is a secret link, not a personal account: anyone with the code can read and change that team's data, and a lost code cannot be recovered. For stricter control, add Firebase Authentication.
