@@ -29,7 +29,7 @@ html.dark body { background: #0e091a; }
 
 body::before { content: ""; position: fixed; inset: -8%; z-index: -1; pointer-events: none;
   background: url("../img/bg.jpg") center / cover no-repeat;
-  animation: drift 45s ease-in-out infinite alternate; will-change: transform; }
+  animation: drift 10s ease-in-out infinite alternate; will-change: transform; }
 html.dark body::before { background-image: url("../img/bg-dark.jpg"); }
 @keyframes drift {
   from { transform: translate3d(-2.5%, -1.5%, 0) scale(1.02); }
