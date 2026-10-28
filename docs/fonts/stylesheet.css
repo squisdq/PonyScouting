@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Tobi';
+    src: url('Tobi-Black.eot');
+    src: local('☞Tobi-Black'), local('Tobi-Black'),
+        url('Tobi-Black.eot?#iefix') format('embedded-opentype'),
+        url('Tobi-Black.woff2') format('woff2'),
+        url('Tobi-Black.woff') format('woff'),
+        url('Tobi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tobi';
+    src: url('Tobi-Light.eot');
+    src: local('☞Tobi-Light'), local('Tobi-Light'),
+        url('Tobi-Light.eot?#iefix') format('embedded-opentype'),
+        url('Tobi-Light.woff2') format('woff2'),
+        url('Tobi-Light.woff') format('woff'),
+        url('Tobi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tobi';
+    src: url('Tobi.eot');
+    src: local('☞Tobi'), local('Tobi'),
+        url('Tobi.eot?#iefix') format('embedded-opentype'),
+        url('Tobi.woff2') format('woff2'),
+        url('Tobi.woff') format('woff'),
+        url('Tobi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
