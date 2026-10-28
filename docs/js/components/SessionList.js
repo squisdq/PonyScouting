@@ -104,7 +104,7 @@ export default function SessionList({ ws, workspaces, onOpen, onEnter, onSwitch,
           <form onSubmit=${create} className="space-y-4">
             <div>
               <label className="label" htmlFor="sname">Competition name</label>
-              <input id="sname" autoFocus className="input" placeholder="Almaty Regional 2026" value=${name} onChange=${(e) => setName(e.target.value)} />
+              <input id="sname" autoFocus className="input" placeholder="Your competition name" value=${name} onChange=${(e) => setName(e.target.value)} />
             </div>
             <button disabled=${!name.trim()} className="btn w-full">Create session</button>
           </form>

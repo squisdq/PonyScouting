@@ -14,10 +14,10 @@ export const SEASONS = [
 ];
 
 export const TEXT_FIELDS = [
-  { key: "auto", label: "Autonomous", hint: "What it does, where it parks" },
-  { key: "intake", label: "Intake", hint: "Speed, reliability of pickup" },
-  { key: "scoring", label: "Shooter / Scoring", hint: "How it scores points" },
-  { key: "endgame", label: "Endgame", hint: "For example, hanging" },
+  { key: "auto", label: "Autonomous", hint: "How many tips, does it park?" },
+  { key: "intake", label: "Intake", hint: "Speed, type, overposession" },
+  { key: "scoring", label: "Shooter / Scoring", hint: "Rapid shoot, SOTM/SWM, stability..." },
+  { key: "endgame", label: "Endgame", hint: "Endgame behavior" },
   { key: "notes", label: "Comments / Breakdowns", hint: "Anything else worth knowing" },
 ];
 

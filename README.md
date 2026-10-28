@@ -64,4 +64,4 @@ Match data from [FTCScout](https://ftcscout.org). Built on Firebase. FIRST® and
 
 ## License
 
-Add your license here. Fonts, background artwork and the field image are not covered by the code license.
+Все равно никто не читает. Добавлю лицензии потом.
