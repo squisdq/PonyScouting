@@ -13,7 +13,7 @@ const LEGAL = {
       "Access to a team's data is granted by an access code. Anyone who knows the code can read and change all of the team's data. Keep the code and share it only with your team. A lost code cannot be recovered.",
       "It is forbidden to try to access other people's data, guess codes, overload the service or use it for unlawful purposes.",
       "We may change or discontinue the app and change these terms. By continuing to use the app you accept the current version.",
-      "Contact the author: islam.alijan1@gmail.com.",
+      "Contact the author: [your e-mail or Telegram].",
     ],
   },
   privacy: {
@@ -46,7 +46,7 @@ const LEGAL = {
   },
 };
 
-export default function Footer() {
+export default function Footer({ onGuide }) {
   const [open, setOpen] = useState(null);
   const [prompt, setPrompt] = useState(null);
 
@@ -61,7 +61,7 @@ export default function Footer() {
     <footer className="mx-auto max-w-5xl px-5 pb-24 pt-6 text-center text-sm">
       <p className="muted">Pony Scouting — an unofficial FIRST Tech Challenge scouting tool. Not affiliated with FIRST® or FTCScout.</p>
       <p className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-1">
-        ${link("terms", "Terms of use")}${link("privacy", "Privacy")}${link("data", "Data sources")}${link("install", "Install & offline")}
+        <button className="link underline" onClick=${onGuide}>How it works</button>${link("terms", "Terms of use")}${link("privacy", "Privacy")}${link("data", "Data sources")}${link("install", "Install & offline")}
         ${prompt && html`<button className="btn2" onClick=${() => { prompt.prompt(); setPrompt(null); }}>Install app</button>`}
       </p>
       ${open && html`<${Modal} title=${LEGAL[open].title} onClose=${() => setOpen(null)}>

@@ -1,7 +1,9 @@
 const V = "pony-v1";
 const ALLOW = ["cdn.tailwindcss.com", "esm.sh", "www.gstatic.com", "fonts.googleapis.com", "fonts.gstatic.com"];
 const CORE = ["./", "./index.html", "./css/theme.css", "./manifest.webmanifest",
-  "./img/bg.jpg", "./img/bg-dark.jpg", "./img/field.webp", "./img/favicon.png"];
+  "./img/bg.jpg", "./img/bg-dark.jpg", "./img/field.webp", "./img/favicon.png",
+  "./img/guide/1-team.png", "./img/guide/2-session.png", "./img/guide/3-link.png", "./img/guide/4-scout.png",
+  "./img/guide/5-field.png", "./img/guide/6-alliance.png", "./img/guide/7-offline.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil((async () => {

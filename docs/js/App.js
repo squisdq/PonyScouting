@@ -5,6 +5,7 @@ import SessionList from "./components/SessionList.js";
 import SessionView from "./components/SessionView.js";
 import ThemeToggle from "./components/ThemeToggle.js";
 import Footer from "./components/Footer.js";
+import Onboarding from "./components/Onboarding.js";
 
 const readHash = () => window.location.hash.match(/^#\/s\/(.+)$/)?.[1] ?? null;
 
@@ -12,6 +13,8 @@ export default function App() {
   const [list, setList] = useState(loadWorkspaces);
   const [active, setActive] = useState(getActiveCode);
   const [sessionId, setSessionId] = useState(readHash);
+  const [guide, setGuide] = useState(() => { try { return !localStorage.getItem("pony.guide"); } catch { return false; } });
+  const closeGuide = () => { try { localStorage.setItem("pony.guide", "1"); } catch {} setGuide(false); };
 
   useEffect(() => {
     const onChange = () => setSessionId(readHash());
@@ -32,5 +35,5 @@ export default function App() {
     : html`<${SessionList} ws=${ws} workspaces=${list} onOpen=${(id) => (window.location.hash = `#/s/${id}`)}
              onEnter=${enter} onSwitch=${switchTo} onLeave=${leave} />`;
 
-  return html`<${React.Fragment}>${page}<${Footer} /><${ThemeToggle} /><//>`;
+  return html`<${React.Fragment}>${page}<${Footer} onGuide=${() => setGuide(true)} /><${ThemeToggle} />${guide && html`<${Onboarding} onClose=${closeGuide} />`}<//>`;
 }
