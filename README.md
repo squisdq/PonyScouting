@@ -64,4 +64,15 @@ Match data from [FTCScout](https://ftcscout.org). Built on Firebase. FIRST® and
 
 ## License
 
-Все равно никто не читает. Добавлю лицензии потом.
+# Pony Scouting Non-Commercial Scouting License
+
+Copyright (c) 2026 squisdq (Islam Alizhan)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation, to use, copy, modify, and distribute the software, subject to the following conditions:
+
+1. The software may only be used for non-commercial purposes, particularly scouting, analysis, and participation in FTC and other robotics competitions.
+2. Commercial use, including selling, sublicensing, or incorporating the software into paid products or services, is strictly prohibited without prior written permission from the author.
+3. Any redistribution, modification, or derivative work must retain the original copyright notice, this license, and proper attribution to the original author.
+4. Any public use or distribution of modified versions must clearly acknowledge the original project and provide a link to its source repository.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. THE AUTHOR SHALL NOT BE LIABLE FOR ANY CLAIM OR DAMAGES ARISING FROM ITS USE.
