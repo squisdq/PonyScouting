@@ -13,7 +13,7 @@ const LEGAL = {
       "Access to a team's data is granted by an access code. Anyone who knows the code can read and change all of the team's data. Keep the code and share it only with your team. A lost code cannot be recovered.",
       "It is forbidden to try to access other people's data, guess codes, overload the service or use it for unlawful purposes.",
       "We may change or discontinue the app and change these terms. By continuing to use the app you accept the current version.",
-      "Contact the author: [your e-mail or Telegram].",
+      "Contact the author: islam.alijan1@gmail.com",
     ],
   },
   privacy: {
